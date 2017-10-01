@@ -63,6 +63,12 @@
 		margin-right: auto;
 	}
 
+	.container-extra {
+		margin-top: 2em;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 	.container.\31 25\25 {
 		width: 100%;
 		max-width: 87.5em;
@@ -1593,10 +1599,6 @@
 		font-weight: 300;
 	}
 
-	em, i {
-		font-style: italic;
-	}
-
 	p {
 		margin: 0 0 2em 0;
 	}
@@ -2513,7 +2515,7 @@
 		}
 
 	ul {
-		list-style: disc;
+		list-style-type: none;
 		margin: 0 0 2em 0;
 		padding-left: 1em;
 	}
@@ -3255,8 +3257,8 @@
 	}
 
 	#header {
-		background: rgba(39, 40, 51, 0.965);
-		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
+		background: rgba(39, 40, 51, 1);
+		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.5);
 		cursor: default;
 		height: 3.5em;
 		left: 0;
@@ -3288,6 +3290,7 @@
 
 				#header nav ul li {
 					display: inline-block;
+					font-weight: 300;
 					margin-left: 1em;
 				}
 
@@ -3332,15 +3335,12 @@
 
 	#banner {
 		background-attachment: fixed;
-		background-color: #272833;
-		background-image: url("../../images/banner.jpg");
+		background-image: url("../../images/sr_banner.JPG");
 		background-position: center center;
 		background-size: cover;
-		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
 		min-height: 100vh;
 		position: relative;
 		text-align: center;
-		z-index: 21;
 	}
 
 		#banner:before {
@@ -3352,10 +3352,10 @@
 		}
 
 		#banner:after {
-			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), url("images/overlay.png");;
+			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), url("images/overlay.png");;
+			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), url("images/overlay.png");;
+			background-image: linear-gradient(top, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), url("images/overlay.png");;
 			content: '';
 			display: block;
 			height: 100%;
@@ -3409,6 +3409,51 @@
 	body.is-touch #banner {
 		background-attachment: scroll;
 	}
+
+
+	/* Overview */
+
+		#overview {
+			background-attachment: fixed;
+			/*background-image: url("../../images/sr_banner.JPG");*/
+			background-position: center center;
+			background-size: cover;
+			min-height: 100vh;
+			position: relative;
+		}
+
+			#overview:after {
+				background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), url("images/overlay.png");;
+				background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), url("images/overlay.png");;
+				background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), url("images/overlay.png");;
+				background-image: linear-gradient(top, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), url("images/overlay.png");;
+				content: '';
+				display: block;
+				height: 100%;
+				left: 0;
+				position: absolute;
+				top: 0;
+				width: 100%;
+			}
+
+				#overview .content .image {
+					border-radius: 100%;
+					display: inline-block;
+					height: 18em;
+					margin-left: 3em;
+					vertical-align: middle;
+					width: 18em;
+				}
+
+					#overview .content .image img {
+						border-radius: 100%;
+						display: block;
+						width: 100%;
+					}
+
+		body.is-touch #overview {
+			background-attachment: scroll;
+		}
 
 /* Footer */
 
@@ -3699,7 +3744,7 @@
 		/* Banner */
 
 			#banner {
-				box-shadow: 0 0.125em 0.5em 0 rgba(0, 0, 0, 0.25);
+				box-shadow: 0 0.125em 0.5em 0 rgba(0, 0, 0, 0.5);
 				min-height: calc(100vh - 44px);
 			}
 
