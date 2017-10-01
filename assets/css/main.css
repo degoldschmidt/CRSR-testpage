@@ -3438,10 +3438,6 @@
 		}
 
 			#overview:after {
-				background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), url("images/overlay.png");;
-				background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), url("images/overlay.png");;
-				background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), url("images/overlay.png");;
-				background-image: linear-gradient(top, rgba(23, 24, 32, 0.5), rgba(23, 24, 32, 0.5)), url("images/overlay.png");;
 				content: '';
 				display: block;
 				height: 100%;
