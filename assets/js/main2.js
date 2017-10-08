@@ -26,7 +26,7 @@ jQuery(document).ready(function($){
 		this.modalBody = this.modal.find('.body');
 		this.modalBodyBg = this.modal.find('.body-bg');
 		this.modalMaxWidth = 800;
-		this.modalMaxHeight = 480;
+		this.modalMaxHeight = 800;
 
 		this.animating = false;
 
@@ -150,7 +150,7 @@ jQuery(document).ready(function($){
 				windowHeight = $(window).height();
 
 			var modalWidth = ( windowWidth*.8 > self.modalMaxWidth ) ? self.modalMaxWidth : windowWidth*.8,
-				modalHeight = ( windowHeight*.8 > self.modalMaxHeight ) ? self.modalMaxHeight : windowHeight*.8;
+				modalHeight = ( windowHeight*.9 > self.modalMaxHeight ) ? self.modalMaxHeight : windowHeight*.9;
 
 			var modalTranslateX = parseInt((windowWidth - modalWidth)/2 - eventLeft),
 				modalTranslateY = parseInt((windowHeight - modalHeight)/2 - eventTop);
